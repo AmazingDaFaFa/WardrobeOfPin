@@ -183,7 +183,6 @@ def create_new_outfit():
 
     data_input_json.update(weather_data)
 
-
     # TODO 调用数据库方法----checkWeather(weather, max_temp, min_temp) 返回值 categorys = [category1, category2, ...]
     # TODO 调用数据库方法----checkMood(mood) 返回值 colors = [color1, color2, ...]
     # TODO 调用数据库方法----get_popular_color() 返回值 color_p = [color1, color2, ...]

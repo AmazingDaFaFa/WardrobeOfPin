@@ -4,6 +4,7 @@ import base64
 import cv2
 import numpy as np
 from crawler import crawler_weather
+# from DBUtils import DBHelper
 
 
 app = Flask(__name__)
@@ -21,8 +22,7 @@ def user_login():
     user_id = 1
 
     # TODO 调用数据库登录接口----login(username, password) 返回值 user_id，若为0则表示密码不正确，若为-1则表示用户不存在
-    # user_id = login()
-    #
+    # user_id = DBHelper.DBHelper.login(data_input_json['username'], data_input_json['password'])
 
     data_output_json = {'user_id': user_id}
 
@@ -37,7 +37,8 @@ def user_register():
     # TODO 调用数据库注册函数----register(username, password, sex, height, weight) 返回值user_id
     user_id = 1
 
-    # user_id = register(data_input_json['username'], data_input_json['password'], data_input_json['sex'], data_input_json['height'], data_input_json['weight']
+    # user_id = DBHelper.DBHelperregister(data_input_json['username'], data_input_json['password'], data_input_json['sex']
+    #                                     , data_input_json['height'], data_input_json['weight'])
 
     data_output_json = {'user_id': user_id}
 
